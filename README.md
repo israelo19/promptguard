@@ -247,7 +247,7 @@ If you use this research, please cite:
   title = {PromptGuard: Systematic Prompt Injection Attack and Defense Benchmarking},
   year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/iogwu/promptguard}
+  url = {https://github.com/israelo19/promptguard}
 }
 ```
 
