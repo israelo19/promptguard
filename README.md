@@ -7,7 +7,7 @@ A systematic benchmark for testing prompt injection attacks and defenses in LLM-
 
 ## Overview
 
-PromptGuard is an AI safety research project that systematically evaluates prompt injection vulnerabilities in LLM applications. We tested **113+ attack techniques** across **14 categories** against three simulated applications, then developed and validated **16 defense strategies**.
+PromptGuard is an AI safety research project that systematically evaluates prompt injection vulnerabilities in LLM applications. I tested **113+ attack techniques** across **14 categories** against three simulated applications, then developed and validated **16 defense strategies**.
 
 ### Key Findings
 
@@ -19,13 +19,13 @@ PromptGuard is an AI safety research project that systematically evaluates promp
 | Applications tested | 3 |
 | Overall attack success rate | 4.7% |
 
-**Novel Contribution**: We discovered that **"content-as-injection"** attacks bypass traditional instruction guards. When the injection IS the content to process (not an instruction to follow), defenses that detect "instructions" fail completely.
+**Novel Contribution**: I discovered that **"content-as-injection"** attacks bypass traditional instruction guards. When the injection IS the content to process (not an instruction to follow), defenses that detect "instructions" fail completely.
 
 ## Research Highlights
 
 ### Phase 1: Breaking the Translator (6.3% success rate)
 
-We found that attacks reframing injection as legitimate tasks were most effective:
+I found that attacks reframing injection as legitimate tasks were most effective:
 
 | Attack Type | Example | Why It Works |
 |-------------|---------|--------------|
@@ -38,7 +38,7 @@ We found that attacks reframing injection as legitimate tasks were most effectiv
 
 ### Phase 2: Breaking "Secure" Apps
 
-Even apps with explicit defenses were vulnerable to targeted attacks:
+I found that even apps with explicit defenses were vulnerable to targeted attacks:
 
 | App | Defense | Phase 1 | Phase 2 | Breakthrough Attack |
 |-----|---------|---------|---------|---------------------|
@@ -58,7 +58,7 @@ This succeeds because:
 
 ### Defense Effectiveness
 
-We developed layered defenses that achieve **100% block rate with 0% false positives**:
+I developed layered defenses that achieve **100% block rate with 0% false positives**:
 
 | Defense | Block Rate | False Positives | Best For |
 |---------|-----------|-----------------|----------|
@@ -226,7 +226,7 @@ No single defense achieved 100% effectiveness, but combining multiple strategies
 1. **Single model tested**: Results may not generalize to GPT-4, Llama, Mistral
 2. **Limited attack corpus**: Real adversaries are more creative
 3. **Simplified applications**: Production apps have more complex prompts
-4. **No adversarial iteration**: We didn't adapt attacks based on defense failures
+4. **No adversarial iteration**: I didn't adapt attacks based on defense failures
 5. **English only**: Multilingual attacks may differ
 
 ## Future Work
@@ -242,12 +242,12 @@ No single defense achieved 100% effectiveness, but combining multiple strategies
 If you use this research, please cite:
 
 ```bibtex
-@misc{promptguard2025,
+@misc{promptguard2026,
   author = {Ogwu, Israel},
   title = {PromptGuard: Systematic Prompt Injection Attack and Defense Benchmarking},
-  year = {2025},
+  year = {2026},
   publisher = {GitHub},
-  url = {https://github.com/israelo19/promptguard}
+  url = {https://github.com/israelo19/promptguard} 
 }
 ```
 
@@ -257,7 +257,7 @@ A systematic study of prompt injection vulnerabilities and defense mechanisms fo
 
 **Author**: Israel Ogwu
 **Affiliation**: University of Maryland, Department of Computer Science
-**Date**: January 2025
+**Date**: January 2026
 
 ---
 
@@ -285,7 +285,7 @@ This research systematically tested 79 prompt injection attacks across 14 catego
 
 - **Model**: Claude 3.5 Haiku (claude-3-5-haiku-20241022)
 - **API**: Anthropic Messages API
-- **Test Date**: January 11, 2025
+- **Test Date**: January 11, 2026
 
 ### Target Applications
 
