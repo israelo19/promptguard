@@ -229,7 +229,7 @@ No single defense achieved 100% effectiveness, but combining multiple strategies
 4. **No adversarial iteration**: I didn't adapt attacks based on defense failures
 5. **English only**: Multilingual attacks may differ
 
-## Future Work
+## Possible Future Work
 
 - [ ] Cross-model testing (GPT-4, Llama, Mistral)
 - [ ] Adversarial red-teaming with iterative attack refinement
@@ -251,7 +251,7 @@ If you use this research, please cite:
 }
 ```
 
-# PromptGuard: Prompt Injection Attack & Defense Benchmarking
+# PromptGuard: Systematic Prompt Injection Attack and Defense Benchmarking
 
 A systematic study of prompt injection vulnerabilities and defense mechanisms for LLM-powered applications.
 
