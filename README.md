@@ -7,17 +7,17 @@ A systematic benchmark for testing prompt injection attacks and defenses in LLM-
 
 ## Overview
 
-PromptGuard is an AI safety research project that systematically evaluates prompt injection vulnerabilities in LLM applications. I tested **113+ attack techniques** across **14 categories** against three simulated applications, then developed and validated **16 defense strategies**.
+PromptGuard is an AI safety research project that systematically evaluates prompt injection vulnerabilities in LLM applications. I tested **148 attack techniques** across **23 categories** (14 Phase 1 + 9 Phase 2) against three simulated applications, then developed and validated **16 defense strategies**.
 
 ### Key Findings
 
 | Metric | Value |
 |--------|-------|
-| Total attacks tested | 113+ |
-| Attack categories | 14 |
+| Total attacks tested | 148 |
+| Attack categories | 23 |
 | Defense strategies | 16 |
 | Applications tested | 3 |
-| Overall attack success rate | 4.7% |
+| Overall attack success rate | 3.6% |
 
 **Novel Contribution**: I discovered that **"content-as-injection"** attacks bypass traditional instruction guards. When the injection IS the content to process (not an instruction to follow), defenses that detect "instructions" fail completely.
 
@@ -105,7 +105,7 @@ python scripts/test_manual.py --attack "Your attack here" --app translator
 
 ## Attack Taxonomy
 
-### 14 Attack Categories (113+ attacks)
+### 14 Attack Categories (79 attacks)
 
 | Category | Count | Description |
 |----------|-------|-------------|
@@ -124,7 +124,7 @@ python scripts/test_manual.py --attack "Your attack here" --app translator
 | `prompt_leaking` | 6 | System prompt extraction |
 | `subtle` | 6 | Non-marker instruction following |
 
-### Phase 2 Categories (69+ attacks)
+### Phase 2 Categories (69 attacks)
 
 | Category | Count | Target |
 |----------|-------|--------|
