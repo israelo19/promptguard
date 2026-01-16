@@ -266,7 +266,7 @@ These patterns are likely well-represented in Claude's safety training.
 
 ### 4. Creative Reframing Is the New Attack Vector
 
-Successful attacks didn't try to override instructions—they reframed the injection as something legitimate:
+Successful attacks didn't try to override instructions, they reframed the injection as something legitimate:
 - QA testing (validation is normal)
 - Translation pairs (looks like valid input)
 - Error handling (fallback responses are expected)
@@ -297,7 +297,7 @@ No single defense was 100% effective (except output validation), but combining m
 
 3. **Use layered defenses**: Combine instruction emphasis + input sanitization + output validation.
 
-4. **Test against creative attacks**: Traditional jailbreaks aren't the threat—context redefinition is.
+4. **Test against creative attacks**: Traditional jailbreaks aren't the threat, context redefinition is.
 
 ### For AI Safety Researchers
 
@@ -325,7 +325,7 @@ No single defense was 100% effective (except output validation), but combining m
 
 ### An Open Question: Is Prompt Injection Fundamentally Solvable?
 
-This research achieved 100% block rates against the attacks tested, but this should not be interpreted as "solving" prompt injection. The [HackAPrompt](https://aclanthology.org/2023.emnlp-main.302/) research team concluded that "prompt based defenses do not work," comparing prompt hacking to social engineering—a problem that may be inherently unsolvable.
+This research achieved 100% block rates against the attacks tested, but this should not be interpreted as "solving" prompt injection. The [HackAPrompt](https://aclanthology.org/2023.emnlp-main.302/) research team concluded that "prompt based defenses do not work," comparing prompt hacking to social engineering, a problem that may be inherently unsolvable.
 
 My 100% block rate likely reflects the limits of my attack creativity, not the robustness of the defenses. A determined adversary with more time and novel techniques would likely find bypasses. The cat-and-mouse dynamic between attackers and defenders is ongoing, and there's active debate in the field about whether LLMs can ever be fully secured against adversarial input.
 
@@ -395,7 +395,7 @@ python scripts/test_phase2_defenses.py
 
 ## Conclusion
 
-Prompt injection remains a significant vulnerability in LLM applications, but practical mitigations exist. Simple defenses—explicit instruction guards, output constraints, and layered protection—can achieve 100% block rates against known attacks without impacting legitimate use.
+Prompt injection remains a significant vulnerability in LLM applications, but practical mitigations exist. Simple defenses, explicit instruction guards, output constraints, and layered protection, can achieve 100% block rates against known attacks without impacting legitimate use.
 
 However, whether prompt injection is fundamentally solvable remains an open question. The attack landscape is shifting from brute-force instruction override to creative context redefinition. Defenders must move beyond pattern matching to semantic understanding of user intent.
 
@@ -425,6 +425,6 @@ Thanks to the Anthropic AI Safety team for their work on Constitutional AI and C
 
 ---
 
-*This research was conducted as part of an AI safety learning project. The author is a junior Computer Science student at the University of Maryland with a cybersecurity concentration.*
+*This research was conducted as part of an AI safety learning project. I am a junior Computer Science student at the University of Maryland with a cybersecurity concentration.*
 
 **Contact**: [GitHub](https://github.com/israelo19) | [LinkedIn](https://linkedin.com/in/israelogwu)
