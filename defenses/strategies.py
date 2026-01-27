@@ -75,6 +75,10 @@ class InputSanitizer(DefenseStrategy):
         Args:
             mode: "warn" (add warning to input), "filter" (remove patterns), "block" (replace entirely)
         """
+        valid_modes = ("warn", "filter", "block")
+        if mode not in valid_modes:
+            raise ValueError(f"Invalid mode '{mode}'. Must be one of {valid_modes}")
+
         super().__init__(
             name=f"input_sanitizer_{mode}",
             description=f"Input sanitization in {mode} mode"
