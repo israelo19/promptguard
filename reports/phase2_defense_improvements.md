@@ -2,7 +2,7 @@
 
 ## Summary
 
-After Phase 2 attacks successfully bypassed the "secure" summarizer and sentiment apps, we developed targeted defenses that now block 100% of those attacks with 0% false positives.
+After Phase 2 attacks successfully bypassed the "secure" summarizer and sentiment apps, I developed targeted defenses that now block 100% of those attacks with 0% false positives.
 
 | Defense | App | Phase 2 Attack Block Rate | False Positives |
 |---------|-----|---------------------------|-----------------|
@@ -156,7 +156,7 @@ After: Response = "POSITIVE" (correctly classifies extracted text)
 
 ### 1. Text Extraction > Blocking
 
-For sentiment manipulation, simply blocking the input isn't ideal. Instead, we now extract the actual text to analyze:
+For sentiment manipulation, simply blocking the input isn't ideal. Instead, I now extract the actual text to analyze:
 
 ```python
 # Before: Block entirely

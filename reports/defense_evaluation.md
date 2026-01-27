@@ -174,7 +174,7 @@ Why it failed:
 ## Technical Details
 
 - **Model**: claude-3-5-haiku-20241022
-- **Test Date**: 2025-01-11
+- **Test Date**: 2026-01-11
 - **Attacks Tested**: 5 (previously successful against undefended translator)
 - **Legitimate Inputs**: 4 (for false positive testing)
 - **False Positives**: 0 across all defenses

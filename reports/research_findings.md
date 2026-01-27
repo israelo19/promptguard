@@ -4,7 +4,7 @@ A systematic study of prompt injection vulnerabilities and defense mechanisms fo
 
 **Author**: Israel Ogwu
 **Affiliation**: University of Maryland, Department of Computer Science
-**Date**: January 2025
+**Date**: January 2026
 
 ---
 
@@ -32,7 +32,7 @@ This research systematically tested 79 prompt injection attacks across 14 catego
 
 - **Model**: Claude 3.5 Haiku (claude-3-5-haiku-20241022)
 - **API**: Anthropic Messages API
-- **Test Date**: January 11, 2025
+- **Test Date**: January 11, 2026
 
 ### Target Applications
 
