@@ -56,7 +56,7 @@ defense = OutputValidator(markers=["pwned", "hacked", "compromised", ...])
 
 **Effectiveness**: 100% block rate (for known markers)
 **False Positives**: 0%
-**Limitation**: Only blocks known marker words
+**Limitation**: Not true validation - relies on LLM cooperation to blocks known marker words and can be bypassed.  
 
 ### Tier 2: Recommended (Add for Stronger Protection)
 
